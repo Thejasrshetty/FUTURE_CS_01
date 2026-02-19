@@ -1,0 +1,88 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cyber Security Internship – Vulnerability Assessment Report
+
+Intern Name: Thejas R Shetty
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> Tools Used
+
+1. Nmap – Port scanning
+2. OWASP ZAP – Vulnerability scanning
+3. Browser DevTools – Security header analysis
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(1)Tool Used: Nmap
+
+-> Operating System Used: Windows 11 (64-bit)
+
+-> Target Website: https://testphp.vulnweb.com
+
+-> Testing Method: Read-Only Security Assessment
+
+-> Scan Method: Intense Scan
+
+-> Date: 13-02-2026
+
+-> Time: 09:59 PM
+
+-> Test Result: Port 80 open
+
+-> Risk Level: Medium
+
+-> Conclusion: Open port may expose server. Close unused ports.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(2)Tool Used: Browser DevTools
+
+-> Operating System Used: Windows 11 (64-bit)
+
+-> Target Website: http://testhtml5.vulnweb.com
+
+-> Testing Method: Read-Only Security Assessment
+
+-> Scan Method: Manual Inspection
+
+-> Date: 14-02-2026
+
+-> Time: 07:20 AM
+
+-> Test Result: Server info and headers exposed
+
+-> Risk Level: Low
+
+-> Conclusion: Exposed info may reduce security. Hide server details and add headers.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(3)Tool Used: OWASP ZAP
+
+-> Operating System Used: Windows 11 (64-bit)
+
+-> Target Website: http://testhtml5.vulnweb.com
+
+-> Testing Method: Read-Only Security Assessment
+
+-> Scan Method: Automated Scan
+
+-> Date: 18-02-2026
+
+-> Time: 09:35 PM
+
+-> Test Result: Missing headers and cookie issue
+
+-> Risk Level: Medium
+
+-> Conclusion: Missing protections may allow attacks. Add security headers and secure cookies.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conclusion:
+
+The website contains some security weaknesses. It is recommended to add proper security headers, secure cookies, and update server configuration to improve security.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

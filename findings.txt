@@ -1,0 +1,94 @@
+-> Tools Used
+
+1. Nmap – Port scanning
+2. OWASP ZAP – Vulnerability scanning
+3. Browser DevTools – Security header analysis
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Issue: Server and PHP version exposed in response headers
+
+Details:
+Server version exposed: nginx/1.19.0
+PHP version exposed: PHP 5.6.40
+
+Why this is a problem:
+Attackers can identify outdated software and search for known vulnerabilities.
+
+Risk Level:
+Medium
+
+Recommended Fix:
+Hide server version and technology details from public response headers.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tool Used for Scanning: Nmap
+
+Issue: Open Port 80 detected
+
+Details:
+Port 80 (HTTP) is open and accessible on the server.
+
+Why this is a problem:
+Attackers can identify open ports and attempt unauthorized access.
+
+Risk Level:
+Medium
+
+Recommended Fix:
+Close unused ports and restrict access using firewall rules.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tool Used for Scanning: OWASP ZAP
+
+Issue: Missing Security Headers
+
+Details:
+Security headers like X-Frame-Options and Content-Security-Policy are missing.
+
+Why this is a problem:
+Attackers can perform clickjacking and other web-based attacks.
+
+Risk Level:
+Medium
+
+Recommended Fix:
+Add proper security headers in the server configuration.
+
+
+Issue: Cookie Security Not Properly Configured
+
+Details:
+Cookies are missing Secure and HttpOnly attributes.
+
+Why this is a problem:
+Attackers can steal session cookies and hijack user sessions.
+
+Risk Level:
+Medium
+
+Recommended Fix:
+Enable Secure and HttpOnly flags for cookies.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tool Used for Scanning: Browser DevTools
+
+Issue: Server Information Exposure
+
+Details:
+Server version and technology information are visible in response headers.
+
+Why this is a problem:
+Attackers can identify outdated software and search for known vulnerabilities.
+
+Risk Level:
+Medium
+
+Recommended Fix:
+Hide server version and technology details from public response headers.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

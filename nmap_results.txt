@@ -1,0 +1,13 @@
+Microsoft Windows [Version 10.0.26200.7705]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admins>nmap testphp.vulnweb.com
+Starting Nmap 7.98 ( http://nmap.org ) at 2026-02-13 2155 +0530
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.26s latency).
+rDNS record for 44.228.249.3 ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+Not shown 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+80tcp open  http
+
+Nmap done : 1 IP address (1 host up) scanned in 33.62 seconds

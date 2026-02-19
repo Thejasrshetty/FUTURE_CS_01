@@ -1,0 +1,38 @@
+Tool Used: Browser Developer Tools
+
+Scan Type: Manual Header Inspection
+
+Target Website: http://testphp.vulnweb.com
+
+Operating System: Windows 11 (64-bit)
+
+Date: 14-02-2026
+
+Time: 07:20 PM
+
+----------------------------------------------------------------------------------------------------
+
+Observed Headers:
+
+Status: HTTP/1.1 200 OK
+Server: nginx/1.19.0
+X-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+
+------------------------------------------------------------------------------------------------------
+
+Test Result :
+
+Server and PHP version information is publicly visible in response headers. 
+This may help attackers identify system technology and known vulnerabilities.
+
+Risk Level: Medium
+
+-----------------------------------------------------------------------------------------------------------
+Conclusion:
+
+The website exposes server and PHP version details. 
+It is recommended to hide version information and configure proper security headers.
+
+-----------------------------------------------------------------------------------------------------------

@@ -39,7 +39,7 @@ This assessment followed read-only and ethical testing only:
 ### 📄 Full Vulnerability Assessment Report (PDF) :
 👉 https://drive.google.com/file/d/1RWadonBnhkItXGLktgTr_udHJzFE7imF/view
 
-## --------------------------------------⚠ Disclaimer-------------------------------------------
+## ------------------------------⚠ Disclaimer----------------------------
 This is a point-in-time assessment. New vulnerabilities may appear due to changes or updates. Periodic reassessment is recommended.
 ---------------------------------------------------------------------------------------------------
 
